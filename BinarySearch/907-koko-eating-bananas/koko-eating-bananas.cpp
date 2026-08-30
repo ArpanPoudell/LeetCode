@@ -12,7 +12,7 @@ public:
 
             for(int pile:piles)
             {
-                totalhours+=(pile+mid-1)/mid;
+                totalhours+=ceil((double) pile/mid);
 
             }
 
