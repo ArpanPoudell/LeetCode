@@ -8,7 +8,7 @@ public:
             nums[i]=nums[i]*nums[i];
 
         }
-        sort(nums.begin(),nums.end());
+        nth_element(nums.begin(),nums.begin()+n/2,nums.end());
         long long  largerpart=accumulate(nums.begin()+n/2,nums.end(),0LL);
         long long smallerpart=accumulate(nums.begin(),nums.begin()+n/2,0LL);
 
